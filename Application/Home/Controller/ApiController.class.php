@@ -12,6 +12,33 @@ class ApiController extends Controller {
 
 		foreach ($stus as &$value) {
 		  $value['avatar'] = C('SITE_URL').C('IMAGE_PATH').$value['avatar'];
+
+
+    	//班级名
+    	$class_where = array(
+    		'id' => $value['class_id']
+    	);
+    	$stu_class = M('class')->where($class_where)->find();
+    	$value['class_name'] = $stu_class['classname'];
+
+    	//专业名
+    	$major_where = array(
+    		'id' => $stu_class['major_id']
+    	);
+
+    	$stu_major = M('major')->where($major_where)->find();
+    	$value['major_name'] = $stu_major['major_name'];
+
+
+    	//学院名
+    	$school_where = array(
+    		'id' => $stu_major['pid']
+    	);
+
+    	$stu_school = M('major')->where($school_where)->find();
+    	$value['school_name'] = $stu_school['major_name'];
+
+		  
 		}
     	$this->ajaxReturn($stus);
     }
@@ -24,6 +51,32 @@ class ApiController extends Controller {
     	);
 
     	$target_stu = M('student')->where($where)->find();
+
+    	//班级名
+    	$class_where = array(
+    		'id' => $target_stu['class_id']
+    	);
+    	$stu_class = M('class')->where($class_where)->find();
+    	$target_stu['class_name'] = $stu_class['classname'];
+
+    	//专业名
+    	$major_where = array(
+    		'id' => $stu_class['major_id']
+    	);
+
+    	$stu_major = M('major')->where($major_where)->find();
+    	$target_stu['major_name'] = $stu_major['major_name'];
+
+
+    	//学院名
+    	$school_where = array(
+    		'id' => $stu_major['pid']
+    	);
+
+    	$stu_school = M('major')->where($school_where)->find();
+    	$target_stu['school_name'] = $stu_school['major_name'];
+
+
 
     	$record_where = array(
     		'stu_id' => $stuId

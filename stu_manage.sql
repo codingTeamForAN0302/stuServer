@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50547
 File Encoding         : 65001
 
-Date: 2018-06-09 16:04:06
+Date: 2018-06-09 17:39:34
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -29,10 +29,10 @@ CREATE TABLE `class` (
 -- ----------------------------
 -- Records of class
 -- ----------------------------
-INSERT INTO `class` VALUES ('1', '1', '1');
-INSERT INTO `class` VALUES ('2', '2', '1');
-INSERT INTO `class` VALUES ('3', '1', '2');
-INSERT INTO `class` VALUES ('4', '2', '2');
+INSERT INTO `class` VALUES ('1', 'B15-(1)', '1');
+INSERT INTO `class` VALUES ('2', 'B15-(2)', '1');
+INSERT INTO `class` VALUES ('3', 'B16-(1)', '2');
+INSERT INTO `class` VALUES ('4', 'B16-(2)', '8');
 
 -- ----------------------------
 -- Table structure for course
@@ -108,8 +108,8 @@ CREATE TABLE `record` (
 -- ----------------------------
 -- Records of record
 -- ----------------------------
-INSERT INTO `record` VALUES ('1', '1', '1', '3', '', null);
-INSERT INTO `record` VALUES ('2', '1', '2', '3', '90', null);
+INSERT INTO `record` VALUES ('1', '1', '1', '3', '85', null);
+INSERT INTO `record` VALUES ('2', '1', '2', '2', '90', null);
 
 -- ----------------------------
 -- Table structure for student
@@ -135,10 +135,10 @@ INSERT INTO `student` VALUES ('4', '谷林语', '20', '1', '1', '4.jpg');
 INSERT INTO `student` VALUES ('5', '蔡穗丽', '20', '2', '2', '5.jpg');
 INSERT INTO `student` VALUES ('6', '赵涵', '21', '2', '2', '6.jpg');
 INSERT INTO `student` VALUES ('7', '陈烨', '21', '2', '1', '7.jpg');
-INSERT INTO `student` VALUES ('8', '白冰冰', '21', '2', '2', '8.jpg');
+INSERT INTO `student` VALUES ('8', '白冰冰', '21', '3', '2', '8.jpg');
 INSERT INTO `student` VALUES ('9', '钱继峰', '21', '3', '1', '9.jpg');
-INSERT INTO `student` VALUES ('10', '任翔', '20', '3', '1', '10.jpg');
-INSERT INTO `student` VALUES ('11', '赵德军', '22', '3', '1', '11.jpg');
+INSERT INTO `student` VALUES ('10', '任翔', '20', '4', '1', '10.jpg');
+INSERT INTO `student` VALUES ('11', '赵德军', '22', '4', '1', '11.jpg');
 
 -- ----------------------------
 -- Table structure for term
