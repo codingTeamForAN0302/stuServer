@@ -23,8 +23,22 @@ class ApiController extends Controller {
     		'id' => $stuId
     	);
 
-    	$target_stu = M('student')->where($where)->select();
+    	$target_stu = M('student')->where($where)->find();
+
+    	$record_where = array(
+    		'stu_id' => $stuId
+    	);
+    	$stu_records = M('record')->where($record_where)->order('term_id')->select();
+
+    	foreach ($stu_records as &$record) {
+    		$course_where['id'] = $record['course_id'];
+		  	$record['course_name'] = M('course')->where($course_where)->find()['name']; 
+
+		  	$term_where['id'] = $record['term_id'];
+		  	$record['term_name'] = M('term')->where($term_where)->find()['name']; 
+		}
     	$target_stu['avatar'] = C('SITE_URL').C('IMAGE_PATH').$target_stu['avatar'];
+    	$target_stu['records'] = $stu_records;
     	$this->ajaxReturn($target_stu);
     }
 

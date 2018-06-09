@@ -417,3 +417,189 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0140s ]
 SQL: SELECT * FROM `student`  [ RunTime:0.0010s ]
 
+[ 2018-06-09T16:15:02+08:00 ] 127.0.0.1 /api/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `student` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar D:\phpspace\stuManageServer\Application\Home\Controller\ApiController.class.php 第 27 行.
+
+[ 2018-06-09T16:16:25+08:00 ] 127.0.0.1 /api/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-09T16:17:32+08:00 ] 127.0.0.1 /api/students
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `student`  [ RunTime:0.0010s ]
+
+[ 2018-06-09T16:23:05+08:00 ] 127.0.0.1 /api/students
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')'
+
+[ 2018-06-09T16:24:32+08:00 ] 127.0.0.1 /api/students
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `student`  [ RunTime:0.0000s ]
+
+[ 2018-06-09T16:24:39+08:00 ] 127.0.0.1 /api/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `record` WHERE `id` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-06-09T16:25:11+08:00 ] 127.0.0.1 /api/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `record` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-06-09T16:25:29+08:00 ] 127.0.0.1 /api/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `record` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-09T16:25:54+08:00 ] 127.0.0.1 /api/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `record` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-06-09T16:27:26+08:00 ] 127.0.0.1 /api/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `record` WHERE `id` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `term` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-06-09T16:28:39+08:00 ] 127.0.0.1 /api/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `record` WHERE `id` = 1 ORDER BY term_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `term` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-06-09T16:29:19+08:00 ] 127.0.0.1 /api/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `record` WHERE `stu_id` = 1 ORDER BY term_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `term` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `term` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-06-09T16:29:32+08:00 ] 127.0.0.1 /api/detail?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `record` WHERE `stu_id` = 1 ORDER BY term_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `term` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `term` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `term` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-06-09T16:31:33+08:00 ] 127.0.0.1 /api/detail?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `student` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `record` WHERE `stu_id` = 2 ORDER BY term_id  [ RunTime:0.0000s ]
+
