@@ -7,24 +7,6 @@ class ApiController extends Controller {
     	echo 'this is api';	
     }
 
-    public function chart(){
-    	$female_where = array(
-    		'sex' => 2, 
-    	);
-
-
-    	$male_where = array(
-    		'sex' => 1, 
-    	);
-    	$chart['female'] =  M('student')->where($female_where)->count();
-    	$chart['male'] =  M('student')->where($male_where)->count();
-    	$chart['success'] =  true;
-
-    	$this->ajaxReturn($chart);
-    }
-    
-    
-
     public function students(){
     	$stus = M('student')->select();
 
@@ -113,6 +95,22 @@ class ApiController extends Controller {
     	$this->ajaxReturn($target_stu);
     }
 
+    public function chart(){
+    	$female_where = array(
+    		'sex' => 2, 
+    	);
+
+    	$male_where = array(
+    		'sex' => 1, 
+    	);
+    	$chart['female'] =  M('student')->where($female_where)->count();
+    	$chart['male'] =  M('student')->where($male_where)->count();
+    	$chart['total'] =  M('student')->count();
+    	$chart['success'] =  true;
+
+    	$this->ajaxReturn($chart);
+    }
+    
     public function updateInfo(){
     	$stuId = I('id');
     	$stuSex = I('sex');
