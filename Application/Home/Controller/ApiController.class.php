@@ -118,11 +118,20 @@ class ApiController extends Controller {
     	$stuAge = I('age');	
 
     	$data = [];
-		$data['id'] = $stuId;
-		$data['sex'] = $stuSex;
-		$data['name'] = $stuName;
-		$data['age'] = $stuAge;
+    	if (!empty($stuId)) {
+    		$data['id'] = $stuId;
+    	}
 
+    	if (!empty($stuSex)) {
+    		$data['sex'] = $stuSex;
+    	}
+    	if (!empty($stuName)) {
+    		$data['name'] = $stuName;
+    	}
+    	if (!empty($stuAge)) {
+    		$data['age'] = $stuAge;
+    	}
+		
     	$ret = M('student')->save($data);
 
     	$msg['success'] = true;
