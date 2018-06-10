@@ -8,8 +8,6 @@ class ApiController extends Controller {
     }
 
     public function chart(){
-    	echo 'this is index';
-
     	$female_where = array(
     		'sex' => 2, 
     	);
