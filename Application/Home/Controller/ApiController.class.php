@@ -4,8 +4,28 @@ use Home\Model;
 use Think\Controller;
 class ApiController extends Controller {
     public function index(){
-    	echo 'this is index';	
+    	echo 'this is api';	
     }
+
+    public function chart(){
+    	echo 'this is index';
+
+    	$female_where = array(
+    		'sex' => 2, 
+    	);
+
+
+    	$male_where = array(
+    		'sex' => 1, 
+    	);
+    	$chart['female'] =  M('student')->where($female_where)->count();
+    	$chart['male'] =  M('student')->where($male_where)->count();
+    	$chart['success'] =  true;
+
+    	$this->ajaxReturn($chart);
+    }
+    
+    
 
     public function students(){
     	$stus = M('student')->select();

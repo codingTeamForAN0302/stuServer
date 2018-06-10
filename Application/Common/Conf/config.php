@@ -16,5 +16,6 @@ return array(
     'DB_PORT'               =>  '3306',        // 端口
 
     'SITE_URL' => 'www.stu.com/',
+    //'SITE_URL' => 'http://202.5.19.45/stuServer/index.php/',
     'IMAGE_PATH' => 'image/',
 );
