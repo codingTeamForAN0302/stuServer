@@ -43,6 +43,33 @@ class ApiController extends Controller {
     	$this->ajaxReturn($stus);
     }
 
+    public function deleteStudent(){
+		$stuId = I('id');
+		 
+    	$where = array(
+    		'id' => $stuId
+    	);
+
+		$target_stu = M('student')->where($where)->find();
+
+		if(empty($target_stu)) {
+			$msg['success'] = false;
+    		$msg['msg'] = 'cannot find target student!';
+			$this->ajaxReturn($msg);
+		}
+		$z = M('student')->where($where)->delete();
+		if($z){
+			$msg['success'] = true;
+			$msg['msg'] = 'delete student success~';
+			$this->ajaxReturn($msg);
+		}else{
+			$msg['success'] = false;
+    		$msg['msg'] = 'delete student error!';
+			$this->ajaxReturn($msg);
+		}
+
+
+	}
     public function detail(){
     	$stuId = I('id');
 
