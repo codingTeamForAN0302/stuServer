@@ -61,6 +61,11 @@ class ApiController extends Controller {
 		if($z){
 			$msg['success'] = true;
 			$msg['msg'] = 'delete student success~';
+
+            $record_where = array(
+                'stu_id' => $stuId
+            );
+            M('record')->where($record_where)->delete();
 			$this->ajaxReturn($msg);
 		}else{
 			$msg['success'] = false;
